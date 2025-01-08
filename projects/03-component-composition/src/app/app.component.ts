@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   template: `
     <section class="menu">🏠 Home</section>
     <section class="main">
-      <h1>Metrics and Figures Dashboard</h1>
+      <h1>Cachorro</h1>
       <section class="content">
         <article class="tile"></article>
         <article class="tile">
