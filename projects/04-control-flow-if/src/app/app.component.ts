@@ -15,6 +15,16 @@ import { AccountInfo } from './account-info';
         <p>Valid Thru: {{ account.validThru }}</p>
         <p>CVV: {{ account.CVV }}</p>
         <p>
+          <!-- @if (account.membershipStatus === "gold") {
+            <span class="badge gold">Gold</span>
+          }
+          @if (account.membershipStatus === "platinum") {
+            <span class="badge platinum">Platinum</span>
+          }
+          @if (account.membershipStatus === "silver") {
+          <span class="badge silver">Silver</span>
+          } -->
+
           @switch (account.membershipStatus) {
             @case ("gold") {
               <span class="badge gold switch">Gold</span>
@@ -29,6 +39,7 @@ import { AccountInfo } from './account-info';
               <span class="badge silver switch">Silver</span>
             }
           }
+          
         </p>
       </section>
     </article>
@@ -38,7 +49,7 @@ import { AccountInfo } from './account-info';
 export class AppComponent {
   account: AccountInfo = {
     name: 'Melisa Evan',
-    membershipStatus: 'gold',
+    membershipStatus: 'platinum',
     validThru: '12/2022',
     CVV: '123',
   };
