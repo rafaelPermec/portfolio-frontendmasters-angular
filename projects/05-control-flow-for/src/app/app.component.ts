@@ -6,10 +6,17 @@ import { Component } from '@angular/core';
   template: `
     <section class="container">
       <!-- This article element represents and entire listing -->
-      @for(cars of carList; track cars.id) {
+      @for(cars of carList; track cars) {
       <article class="listing">
         <div class="image-parent">
+          @if (cars.photo) {
           <img class="product-image" [src]="cars.photo" />
+          } @else {
+          <img
+            class="product-image"
+            src="https://placehold.co/100x100"
+          />
+          }
         </div>
         <section class="details">
           <p class="title">{{ cars.make }}</p>
