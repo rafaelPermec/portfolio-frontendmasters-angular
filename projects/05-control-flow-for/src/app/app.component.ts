@@ -41,6 +41,7 @@ import { Component } from '@angular/core';
             <span>Price</span>
             <span>{{ cars.price }}</span>
           </p>
+          <button class="btn_click" (click)="onClickEvent()">Buy</button>
         </section>
       </article>
       } @empty {
@@ -96,4 +97,7 @@ export class AppComponent {
       transmission: 'Automatic',
     },
   ];
+  onClickEvent = () => {
+    console.log('Button clicked');
+  }
 }
