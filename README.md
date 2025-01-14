@@ -2,7 +2,7 @@
 
 ## Create TypeScript-based Web Applications with a Framework Led by Google
 
-- Angular is an application-design framework and development platform for creating efficient and sophisticated single-page apps.
+Angular is a robust application framework maintained by Google for building dynamic, scalable, and feature-rich single-page web applications. Its powerful TypeScript foundation enables developers to create maintainable and modular code, making it ideal for both small and enterprise-grade projects.
 
 ## Repo Map:
 
@@ -14,7 +14,7 @@
 
 - [Firebase Fundamentals](https://github.com/rafaelPermec/portfolio-frontendmasters-angular/tree/main/Firebase%20Fundamentals)
 - [AWS For Front-End Engineers, v2](https://github.com/rafaelPermec/portfolio-frontendmasters-angular/tree/main/AWS%20For%20Front-End%20Engineers%2C%20v2)
-- [The Hard Parts of Object Oriented JavaScript](https://github.com/rafaelPermec/portfolio-frontendmasters-angular/tree/main/AWS%20For%20Front-End%20Engineers%2C%20v2)
+- [The Hard Parts of Object Oriented JavaScript](https://github.com/rafaelPermec/portfolio-frontendmasters-angular/tree/main/The%20Hard%20Parts%20of%20Object%20Oriented%20JavaScript)
 
 ## Teacher, Plataform and Instructors:
 
