@@ -17,7 +17,7 @@ function determineKind(status) {
 }
 
 class HTTPError extends Error {
-  constructor(response, message) {
+  constructor(_response, message) {
     super(
       `HTTPError [status: ${info.statusText} (${info.status})]\n${message}`,
     )
