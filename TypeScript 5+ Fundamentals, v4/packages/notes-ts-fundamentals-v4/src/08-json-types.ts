@@ -43,4 +43,4 @@ isJSON(class {}) //! Classes are not valid JSON
 //// @ts-expect-error
 isJSON(undefined) //! undefined is not valid JSON
 //// @ts-expect-error
-isJSON(BigInt(143)) //! BigInts are not valid JSON
+// isJSON(BigInt(143)) //! BigInts are not valid JSON
