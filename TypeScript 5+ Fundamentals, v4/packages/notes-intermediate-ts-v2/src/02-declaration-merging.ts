@@ -2,14 +2,12 @@
 
 //? Type
 interface Fruit {
-  //      ^?
   name: string
   mass: number
   color: string
 }
 
 const banana: Fruit = {
-  //    ^?
   name: 'banana',
   color: 'yellow',
   mass: 183,
