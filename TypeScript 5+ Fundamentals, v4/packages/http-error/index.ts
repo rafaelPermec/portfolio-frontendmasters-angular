@@ -17,12 +17,13 @@ function determineKind(status) {
 }
 
 class HTTPError extends Error {
-  constructor(_response, message) {
+  constructor(response, message) {
     super(
-      `HTTPError [status: ${info.statusText} (${info.status})]\n${message}`,
+      `HTTPError [status: ${response.statusText} (${response.status})]\n${message}`,
     )
-    this.kind = determineKind(info.status)
+    response.status = determineKind(message.status);
   }
 }
 
-module.exports = { HTTPError, HTTPErrorKind }
+export { HTTPError, HTTPErrorKind };
+
