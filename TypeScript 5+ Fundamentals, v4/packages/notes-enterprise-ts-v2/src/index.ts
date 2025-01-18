@@ -1,1 +1,4 @@
-export const foo = 'bar';
+const foo = 'bar';
+const bar = 'foo';
+
+export { foo, bar };
