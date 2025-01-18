@@ -87,10 +87,10 @@ const BlogIndex: React.FunctionComponent<
       <Bio />
       {courseGroups
         .filter(
-          (c) => courseGroupMap[c.id].courses.length > 0,
+          (course: IAbbrevCourseGroup) => courseGroupMap[course.id].courses.length > 0,
         )
         .sort(
-          (a, b) => a.courseIndexOrder - b.courseIndexOrder,
+          (a: IAbbrevCourseGroup, b: IAbbrevCourseGroup) => a.courseIndexOrder - b.courseIndexOrder,
         )
         .map(({ id }) => {
           const { current } = courseGroupMap[id];
